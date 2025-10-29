@@ -402,7 +402,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    translate("Your Desktop"),
+                    '${translate("Your Desktop")} @ PT.Hiron',
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                 ),
