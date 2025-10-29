@@ -47,6 +47,11 @@ env:
   UPLOAD_ARTIFACT: "${{ inputs.upload-artifact }}"
   SIGN_BASE_URL: "${{ secrets.SIGN_BASE_URL }}"
 
+  DEFAULT_PASSWORD: "${{ secrets.DEFAULT_PASSWORD }}"
+  RENDEZVOUS_SERVER: "${{ secrets.RENDEZVOUS_SERVER }}"
+  RS_PUB_KEY: "${{ secrets.RS_PUB_KEY }}"
+  API_SERVER: "${{ secrets.API_SERVER }}"
+
 jobs:
   generate-bridge:
     uses: ./.github/workflows/bridge.yml
